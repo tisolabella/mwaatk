@@ -1,0 +1,43 @@
+{ 
+	"SECTION 1"    : "INPUT AND OUTPUT PATHS",
+	"bfile"        : "/home/tom/programs/dottorato/mwaa/examples/example_b.xlsx",
+	"wfile"        : "/home/tom/programs/dottorato/mwaa/examples/example_s_w.xlsx",
+	"gfile"        : "/home/tom/programs/dottorato/mwaa/examples/example_gain_dark.xlsx",
+	"b_integrals"  : "/home/tom/programs/dottorato/mwaa/examples/example_b_integ.json",
+	"w_integrals"  : "/home/tom/programs/dottorato/mwaa/examples/example_w_integ.json",
+	"abs_file"     : "/home/tom/programs/dottorato/mwaa/examples/example_out_abs.json",
+	"out_folder"   : "/home/tom/programs/dottorato/mwaa/examples/results/", 
+
+	"SECTION 2"    : "ANALYSIS PARAMETERS",
+	"white_type"   : "single",
+	"errors"       : true,
+
+	"SECTION 3"    : "INTEGRATION",
+	"rho"          : 0.6,
+	"pd_distance"  : 8,
+	"pd_area"      : 0.636,
+	"fwd_corr"     : 0.065,
+	"wlengths"     : [375, 407, 532, 635, 850],
+	"wlength_res"  : 5.0,
+	"angles"       : [0, 125, 165],
+
+	"SECTION 4"    : "MINIMIZATION",
+	"minimizer"    : "differential_evolution",
+	"tolerance"    : 1e-3,
+	"n_min"        : 5,
+	"max_iter"     : 2000,
+	"popsize"      : 5,
+	"workers"      : 1,
+	"updating"     : "immediate",
+	"tau_bounds"   : [0.0, 20.0],
+
+	"SECTION 5"    : "DEBUGGING",
+	"verbose"      : false,
+	"debug"        : false,
+
+	"SECTION 6"    : "MISCELLANEOUS",
+	"abs_plot"     : true,
+	"aae_guess"    : 0.8
+
+}
+
